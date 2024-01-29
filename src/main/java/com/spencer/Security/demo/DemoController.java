@@ -42,7 +42,7 @@ public class DemoController {
     }
 
     @GetMapping("/admins")
-    @PreAuthorize("hasRole('USER')")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<String> testAdmins() {
 
 
