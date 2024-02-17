@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.spencer</groupId>
-	<artifactId>Security</artifactId>
+	<artifactId>security</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Security</name>
 	<description>Running application</description>
@@ -82,6 +82,26 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.4.0</version>
+				<configuration>
+					<from>
+						<image>openjdk:17</image>
+
+					</from>
+
+					<to>
+						<image>docker.io/spencer2k23/jwt-api</image>
+						<tags>
+							<tag>2.0</tag>
+						</tags>
+					</to>
+
 				</configuration>
 			</plugin>
 		</plugins>
